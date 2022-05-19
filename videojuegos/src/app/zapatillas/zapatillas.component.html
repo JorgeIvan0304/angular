@@ -1,4 +1,22 @@
 <h2>{{titulo}}</h2>
+<p>Compra los mejores Productos</p>
 <ul>
-   <li *ngFor="let TargetasRegalo of zapatillas">{{TargetasRegalo.nombre}} - <strong>${{TargetasRegalo.precio}}</strong></li>
+    <li style="list-style: none ;" *ngFor="let marca of marcas; let indice = index">{{indice+' - '+marca}} </li>
+</ul>
+<p>-------------------------------------------------------------------------------</p>
+<p><b> Tarjetas Disponibles </b></p>
+<ul>
+   <li *ngFor="let TargetasRegalo of zapatillas">
+      
+      <span [ngStyle]="{
+          'text-decoration': !TargetasRegalo.stock ? 'line-through' : 'none'
+      }"
+      > {{TargetasRegalo.nombre}} - <strong>${{TargetasRegalo.precio}}</strong></span>
+        
+        <span *ngIf="TargetasRegalo.stock" 
+        [style.background]="TargetasRegalo.stock ? ' green' : 'red'"
+        [style.color]="TargetasRegalo.stock ? ' white' : 'black'"
+        > ¡EN STOCK!</span>
+  
+    </li>
 </ul>
