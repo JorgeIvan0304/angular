@@ -1,27 +1,26 @@
-# Videojuegos
+PROYECTO DE VIDEOJUEGOS
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.5.
+V.1
 
-## Development server
+ESTE PROYECTO CONSISTE EN CREAR UNA CARTELERA DE CINE APLICANDO TODOS LOS CONOCIMIENTOS ACTUALES USANDO SOLAMENTE ANGULAR.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+V.2 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+SE DECLARARON LOS COMPONENTES QUE SE UTILIZARAN PARA ESTE EJERCIO SIENDO UN PEQUEÑO EJEMPLO DE VIDEOJUEGOS, ARTICULOS DE VENTA Y TARJETAS DE REGALO
 
-## Build
+V.3
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+SE HICIERON EJEMPLOS UTILIZANDO CLASES Y MODELOS EN ANGULAR HACIENDO ENFASIS MAS EN LA ESTRUTURA Y FUNCIONAMIENTO QUE EN EL DISEÑO, VIENDO LAS DIFERENTES FORMAR DE IMPORTAR CLASES, DECLARAR OBJETOS TANTO DE MANERA INTERNAR COMO EXTERNA, EXPORTAR VALORES, USANDO UN POCO LA DIRECTIVA IF
 
-## Running unit tests
+V.4 
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+SE EMPEZARON A UTILIZAR DIFERENTES DIRECTIVAS COMO SON EL NGIF , NGFOR Y APLICANDOLO EN EJEMPLOS COMPROBADO SI FUNCIONAN MOSTRANDO LA INFORMACION EN PANTALLA COMO EN CONSOLA Y COMO INTERACTUAN CON LOS OBJETOS
 
-## Running end-to-end tests
+V.5 
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+SE UTILIZO LOS BATA.BINDIND SIENDO EL MAS CLARO USANDO EL NGMODEL PARA GUARDAR LA INFORMACION DE NUESTRO ARREGLO , ASI COMO USANDO LOS EVENTOS SIENDO ESTE LOS CLICK Y LOS STYLES.
 
-## Further help
+TAMBIEN SE REORGANIZO LA FORMA DE MOSTRAR LOS DATOS SIENDO SI ESTAN ACTIVOS, PONERLES UN SPAN DE COLOR, Y QUE TAMBIEN SE PUDIERAN AGREGAR ELEMENTOS AL FORMULARIO BASICO QUE SE HIZO.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+V.6

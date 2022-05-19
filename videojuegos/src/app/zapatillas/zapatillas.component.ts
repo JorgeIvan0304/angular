@@ -45,4 +45,8 @@ export class ZapatillasComponent implements OnInit{
         this.marcas.push(this.producto);
         alert("Producto agregado exitosamente");
     }
+
+    getBorrarProducto(indice: number){
+         this.marcas.splice(indice, 1);
+    }
 }
