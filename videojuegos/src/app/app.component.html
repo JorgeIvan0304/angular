@@ -1,6 +1,12 @@
-<div>
-    <h1>¡¡Bienvenido a GeorgeGames!!</h1>
-    <p> La mejor tienda de juegos </p>
+<div [ngStyle]="{
+    'background': config.fondo,
+    'padding':'20px',
+    'border': '1em solid black',
+    'border-color': config.color
+}">
+
+    <h1>{{title}}</h1>
+    <p> {{descripcion}} </p>
     <button (click)="ocultarVideojuegos(false)" *ngIf="mostrar_videojuegos">Ocultar</button>
     <button (click)="ocultarVideojuegos(true)" *ngIf="!mostrar_videojuegos">Mostrar</button>
     <videojuego *ngIf="mostrar_videojuegos"></videojuego>

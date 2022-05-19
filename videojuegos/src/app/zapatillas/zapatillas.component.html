@@ -1,9 +1,4 @@
 <h2>{{titulo}}</h2>
 <ul>
-    
-    <li>Tarjeta de regalo Amazon</li>
-    <li>Tarjeta de regalo Spotify</li>
-    <li>Tarjeta de regalo Steam</li>
-    <li>Tarjeta de regalo Xbox Pass</li>
-
+   <li *ngFor="let TargetasRegalo of zapatillas">{{TargetasRegalo.nombre}} - <strong>${{TargetasRegalo.precio}}</strong></li>
 </ul>
