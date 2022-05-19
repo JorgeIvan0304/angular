@@ -1,7 +1,9 @@
 <div>
     <h1>¡¡Bienvenido a GeorgeGames!!</h1>
     <p> La mejor tienda de juegos </p>
-    <videojuego></videojuego>
+    <button (click)="ocultarVideojuegos(false)" *ngIf="mostrar_videojuegos">Ocultar</button>
+    <button (click)="ocultarVideojuegos(true)" *ngIf="!mostrar_videojuegos">Mostrar</button>
+    <videojuego *ngIf="mostrar_videojuegos"></videojuego>
     <zapatillas></zapatillas>
     <articulos></articulos>
 </div>
