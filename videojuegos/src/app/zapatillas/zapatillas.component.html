@@ -1,4 +1,8 @@
 <h2>{{titulo}}</h2>
+
+<p>Añadir Producto</p>
+<input type="text" [(ngModel)]="producto"> <button (click)="getAddProducto()">Agregar Producto</button>
+
 <p>Compra los mejores Productos</p>
 <ul>
     <li style="list-style: none ;" *ngFor="let marca of marcas; let indice = index">{{indice+' - '+marca}} </li>

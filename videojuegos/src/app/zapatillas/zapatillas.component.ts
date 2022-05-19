@@ -7,21 +7,23 @@ import { Zapatilla } from "../Models/zapatilla";
 })
 
 export class ZapatillasComponent implements OnInit{
-    public titulo: string = "Tarjetas de regalo";
+    public titulo: string = "Articulos en venta";
     public zapatillas: Array<Zapatilla>;  
     public marcas: String[];
+    public producto:string;
     
     constructor(){
         this.marcas = new Array();
+        this.producto = "";
         this.zapatillas = [
-            new Zapatilla('Amazon',100, 3234354534534,'LATAM', false),
-            new Zapatilla('Spotify',100, 65765756756756,'JPN', true),
-            new Zapatilla('Steam',100, 546546456546456,'EU', true),
-            new Zapatilla('Nintendo',100, 565464565464,'USA', false),
-            new Zapatilla('Amazon',50, 3234354534534,'LATAM', true),
-            new Zapatilla('Spotify',50, 65765756756756,'JPN', false),
-            new Zapatilla('Steam',50, 546546456546456,'EU', true),
-            new Zapatilla('Nintendo',50, 565464565464,'USA', true),
+            new Zapatilla('Muñeco huggy wuggy ',100, 3234354534534,'LATAM', false),
+            new Zapatilla('Figura de Mona de genshi impact',100, 65765756756756,'JPN', true),
+            new Zapatilla('Esferas del dragon de dragon ball Z',100, 546546456546456,'EU', true),
+            new Zapatilla('Espada de kyojuro rengoku de kimetsu no yaiba',100, 565464565464,'USA', false),
+            new Zapatilla('Muñeco huggy wuggy',50, 3234354534534,'LATAM', true),
+            new Zapatilla('Figura de Mona de genshi impact',50, 65765756756756,'JPN', false),
+            new Zapatilla('Esferas del dragon de dragon ball Z',50, 546546456546456,'EU', true),
+            new Zapatilla('Espada de kyojuro rengoku de kimetsu no yaiba',50, 565464565464,'USA', true),
         ]
     }
 
@@ -37,5 +39,10 @@ export class ZapatillasComponent implements OnInit{
            }
        }) ;
        console.log(this.marcas)
+    }
+
+    getAddProducto(){
+        this.marcas.push(this.producto);
+        alert("Producto agregado exitosamente");
     }
 }
